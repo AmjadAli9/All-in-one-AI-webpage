@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#selectedImage {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+#results {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f4f4f9;
+}
+
+.dark-mode button {
+    background-color: #555;
+    color: #f4f4f9;
+    border: none;
+}
+
+.dark-mode #results {
+    color: #f4f4f9;
+}
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Your Recommendations Here</title>
+    <link rel="stylesheet" href="recomendation.css">
+</head>
+<body>
+    <header>
+        <h1>All Your Recommendations Here</h1>
+        <button id="homeButton">Home</button>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </header>
+    <main>
+        <section id="recommendations">
+            <h2>Content Suggestions</h2>
+            <div id="content-list"></div>
+
+            <h2>Product Recommendations</h2>
+            <div id="product-list"></div>
+
+            <h2>Tailored Offers</h2>
+            <div id="offers-list"></div>
+
+            <h2>Get Recommendations Based on Your Preferences</h2>
+            <form id="preferencesForm">
+                <label for="preferences">Select Product Type:</label>
+                <select id="preferences" name="preferences">
+                    <option value="all">All</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="spices">Spices</option>
+                    <option value="music">Music</option>
+                    <option value="literature">Literature</option>
+                    <option value="tea">Tea</option>
+                    <option value="dvd">DVD</option>
+                </select>
+                <button type="submit">Show Recommendations</button>
+            </form>
+            <div id="recommendation-container"></div>
+        </section>
+    </main>
+    <script src="recomendation.js"></script>
+</body>
+</html>

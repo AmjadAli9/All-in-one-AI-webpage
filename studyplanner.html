@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner</title>
+    <link rel="stylesheet" href="studyplanner.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Study Planner</h1>
+            <button id="darkModeToggle">Toggle Dark Mode</button>
+            <button id="homeButton">Home</button>
+        </header>
+        <div id="dashboard">
+            <div id="time"></div>
+            <div id="quote"></div>
+            <div id="progress">
+                <h2>Progress</h2>
+                <div id="progressBarContainer">
+                    <div id="progressBar"></div>
+                </div>
+                <p id="progressText">0% Completed</p>
+            </div>
+            <div id="goal">
+                <h2>Set a Goal</h2>
+                <form id="goalForm">
+                    <input type="text" id="goalInput" placeholder="Enter your goal">
+                    <button type="submit">Set Goal</button>
+                </form>
+                <p id="goalText">No goal set yet.</p>
+            </div>
+            <div id="suggestions">
+                <h2>Suggestions</h2>
+                <ul id="suggestionList"></ul>
+            </div>
+        </div>
+        <div id="calendar-container">
+            <h2>Study Schedule</h2>
+            <div id="calendar"></div>
+            <form id="taskForm">
+                <label for="task">Add Task:</label>
+                <input type="text" id="task" required>
+                <button type="submit">Add Task</button>
+            </form>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+    <script src="studyplanner.js"></script>
+</body>
+</html>

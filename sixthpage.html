@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fact or Fiction</title>
+    <link rel="stylesheet" href="sixthpage.css">
+</head>
+<body>
+    <div class="header">
+        <button id="homeButton" onclick="goHome()">Home</button>
+        <button id="darkModeToggle">Dark Mode</button>
+    </div>
+
+    <div class="container">
+        <h1>Fact or Fiction</h1>
+        <div id="questionSection">
+            <p id="questionText">Loading...</p>
+            <div class="options">
+                <button id="trueButton" onclick="checkAnswer(true)">True</button>
+                <button id="falseButton" onclick="checkAnswer(false)">False</button>
+            </div>
+        </div>
+        <p id="explanationText" class="hidden"></p>
+        <button id="nextButton" class="hidden" onclick="nextQuestion()">Next</button>
+        <div id="scoreBoard">
+            <p>Score: <span id="score">0</span></p>
+            <p>Streak: <span id="streak">0</span></p>
+        </div>
+    </div>
+
+    <script src="sixthpage.js"></script>
+</body>
+</html>

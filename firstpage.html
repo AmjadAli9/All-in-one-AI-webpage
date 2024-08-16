@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Speech to Text</title>
+    <link rel="stylesheet" href="firstpage.css">
+</head>
+<body>
+    <h1>Speech to Text</h1>
+    <label for="languageSelect">Select Language:</label>
+    <select id="languageSelect">
+        <option value="en-US">English (US)</option>
+        <option value="en-GB">English (UK)</option>
+        <option value="es-ES">Spanish (Spain)</option>
+        <option value="fr-FR">French</option>
+        <option value="de-DE">German</option>
+        <option value="hi-IN">Hindi (India)</option>
+        <option value="ur-PK">Urdu (Pakistan)</option>
+        <option value="te-IN">Telugu (India)</option>
+        <!-- Add more language options as needed -->
+    </select>
+    <br>
+    <button id="startButton">Start Listening</button>
+    <button id="stopButton" disabled>Stop Listening</button>
+    <button id="clearButton">Clear Transcript</button>
+    <button id="toggleThemeButton">Toggle Dark Mode</button>
+    <button onclick="window.location.href='home.html'">Home</button>
+   
+    <div id="status"></div>
+    <div id="transcriptContainer">
+        <h2>Transcript</h2>
+        <p id="transcript"></p>
+    </div>
+    <script src="firstpage.js"></script>
+</body>
+</html>
+

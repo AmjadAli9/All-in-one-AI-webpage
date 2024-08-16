@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Whiz Challenge</title>
+    <link rel="stylesheet" href="mathwiz.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Math Whiz Challenge</h1>
+        <div id="difficulty-container" class="difficulty-container">
+            <label for="difficulty">Select Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <button id="startButton" class="btn">Start Game</button>
+        </div>
+        <div id="game-info" class="game-info" style="display: none;">
+            <div id="timer">Time Left: 60</div>
+            <div id="score">Score: 0</div>
+        </div>
+        <div id="question-container" style="display: none;">
+            <div id="question">Question</div>
+            <div id="options" class="options"></div>
+            <div id="feedback"></div>
+            <button id="nextButton" class="btn" style="display: none;">Next Question</button>
+            <button id="hintButton" class="btn" style="display: none;">Show Hint</button>
+            <div id="hint" class="hint"></div>
+        </div>
+        <button id="homeButton" class="btn" style="display: none;">Home</button>
+        <button id="darkModeToggle" class="btn">Toggle Dark Mode</button>
+    </div>
+    <script src="mathwiz.js"></script>
+</body>
+</html>

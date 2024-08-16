@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP Analysis</title>
+    <link rel="stylesheet" href="nlp.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NLP Analysis Tool</h1>
+        <textarea id="textInput" placeholder="Enter text here..."></textarea>
+        <button id="analyzeButton">Analyze Text</button>
+        <button id="toggleDarkMode">Toggle Dark Mode</button>
+        <button id="homeButton">Home</button>
+        
+        <div id="results">
+            <h2>Analysis Results</h2>
+            <p><strong>Sentiment:</strong> <span id="sentimentResult"></span></p>
+            <p><strong>Keywords:</strong> <span id="keywordsResult"></span></p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/compromise"></script>
+    <script src="https://unpkg.com/compromise-sentences"></script>
+    <script src="https://unpkg.com/compromise-sentiment"></script>
+    <script src="nlp.js"></script>
+</body>
+</html>

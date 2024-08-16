@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color:#007bff ;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#container {
+    padding: 20px;
+}
+
+#dashboard {
+    margin-bottom: 20px;
+}
+
+#time {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#quote {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+#progress {
+    margin-bottom: 20px;
+}
+
+#progressBarContainer {
+    width: 100%;
+    background-color: #ddd;
+}
+
+#progressBar {
+    width: 0%;
+    height: 20px;
+    background-color: #4caf50;
+}
+
+#goal {
+    margin-bottom: 20px;
+}
+
+#goalForm input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#suggestions {
+    margin-bottom: 20px;
+}
+
+#suggestionList {
+    list-style: none;
+    padding: 0;
+}
+
+#suggestionList li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#calendar-container {
+    margin-bottom: 20px;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.dark-mode header {
+    background-color: #444;
+}
+
+.dark-mode #progressBar {
+    background-color: #81c784;
+}
+
+.dark-mode #goalForm input {
+    background-color: #555;
+    color: #f0f0f0;
+}
+
+.dark-mode #suggestionList li {
+    background-color: #444;
+}

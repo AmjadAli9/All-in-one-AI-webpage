@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini CodePen</title>
+    <link rel="stylesheet" href="codepen.css">
+</head>
+<body>
+    <div class="controls">
+        <button onclick="toggleDarkMode()" id="darkModeToggle">Dark Mode</button>
+        <button onclick="homePage()">Home</button>
+        <button onclick="runCode()">Run Code</button>
+        <button onclick="resetCode()">Reset</button>
+        <select id="languageSelect" onchange="updateEditors()">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="python">Python</option>
+        </select>
+    </div>
+    <div class="editor-container">
+        <textarea id="htmlCode" class="editor" placeholder="HTML"></textarea>
+        <textarea id="cssCode" class="editor" placeholder="CSS"></textarea>
+        <textarea id="jsCode" class="editor" placeholder="JavaScript"></textarea>
+        <textarea id="cCode" class="editor" placeholder="C" style="display: none;"></textarea>
+        <textarea id="cppCode" class="editor" placeholder="C++" style="display: none;"></textarea>
+        <textarea id="pythonCode" class="editor" placeholder="Python" style="display: none;"></textarea>
+        <iframe id="preview" class="preview"></iframe>
+    </div>
+    <script src="codepen.js"></script>
+</body>
+</html>

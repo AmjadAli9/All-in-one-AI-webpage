@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Recognition with MobileNet</title>
+    <link rel="stylesheet" href="imagerecog.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Image Recognition</h1>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+        <button id="homeButton">Home</button>
+        <input type="file" id="imageInput" accept="image/*">
+        <img id="selectedImage" alt="Selected Image" style="display: none;">
+        <div id="loading" style="display: none;">Loading...</div>
+        <div id="results"></div>
+    </div>
+    <script src="imagerecog.js"></script>
+</body>
+</html>

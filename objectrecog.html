@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Recognition</title>
+    <link rel="stylesheet" href="objectrecog.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Object Recognition</h1>
+        <div class="controls">
+            <input type="file" id="imageInput" accept="image/*">
+            <button id="recognizeButton">Recognize Objects</button>
+            <button id="homeButton">Home</button>
+            <button id="toggleModeButton">Dark Mode</button>
+        </div>
+        <div class="image-container">
+            <img id="selectedImage" src="" alt="Your Image">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="output">
+            <h2>Detected Objects:</h2>
+            <ul id="detectionResults"></ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <script src="objectrecog.js"></script>
+</body>
+</html>
