@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <button id="homeButton" onclick="goHome()">Home</button>
+    <div class="container">
+        <button class="home-button" onclick="goHome()">Home</button>
+        <script>function goHome() {
+    window.location.href = 'home.html';
+}</script>
     <div class="chat-container">
         <div id="chatLog" class="chat-log"></div>
         <div id="typingIndicator" class="typing-indicator">Bot is typing...</div>
